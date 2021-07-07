@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>apiVacinados</name>
+    </assembly>
+    <members>
+        <member name="M:apiVacinados.Controllers.VacinadosController.GravarVacinado(apiVacinados.Models.VacinadoViewModel)">
+            <summary>
+            Realiza o cadastro de uma pessoa e suas informações sobre a vacinação
+            </summary>
+            <param name="model">Modelo de cadastro com todas as informações do vacinado</param>
+            <response code="201">Cadastro realizado com sucesso</response>
+            <returns></returns>
+        </member>
+        <member name="M:apiVacinados.Controllers.VacinadosController.ObterVacinados">
+            <summary>
+            Mostra todos os registros cadastrados
+            </summary>
+            <response code="200">Lista de vacinados retornada com sucesso</response>
+            <response code="204">Não há cadastros a serem consultados</response>
+        </member>
+        <member name="M:apiVacinados.Controllers.VacinadosController.DeletarCadastro(System.Guid)">
+            <summary>
+            Remove um cadastro do sistema
+            </summary>
+            <param name="id"></param>
+            <response code="200">Remoção realizada com sucesso</response>
+        </member>
+        <member name="M:apiVacinados.Controllers.VacinadosController.AtualizarCadastro(apiVacinados.Models.VacinadoViewModel)">
+            <summary>
+            Atualiza por completo um cadastro já existente
+            </summary>
+            <param name="model"></param>
+            <response code="201">Cadastro realizado com sucesso</response>
+        </member>
+    </members>
+</doc>
